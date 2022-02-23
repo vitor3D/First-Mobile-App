@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <link rel="stylesheet" href="css/style.css>
+  <link rel="stylesheet" href="components/loader.css">
+  <style>
+      *{
+ margin: 0;
+ padding: 0;
+ text-decoration:nome;
+}
+html{
+    width: 100vw;
+    height: 100vh;
+}
+/* CSS which you need for blurred box */
+body{
+ color:White;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+ background-position: top;
+ background-image:url(css/background.jpg);
+ width: 100%;
+ height: 100%;
+ font-family: Arial, Helvetica;
+ letter-spacing: 0.02em;
+  font-weight: 400;
+ -webkit-font-smoothing: antialiased; 
+ text-decoration:none;
+}
+a {
+    text-decoration: none;
+}
+.blurred-box{
+  position: relative;
+  width: 250px;
+  height: 350px;
+  top: calc(50% - 175px);
+  left: calc(50% - 125px);
+  background: inherit;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.blurred-box:after{
+ content: '';
+ width: 300px;
+ height: 300px;
+ background: inherit; 
+ position: absolute;
+ left: -25px;
+ left position
+ right: 0;
+ top: -25px;  
+ top position 
+ bottom: 0;
+ box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
+ filter: blur(10px);
+}
+/* Form which you dont need */
+.user-login-box{
+  position: relative;
+  margin-top: 50px;
+  text-align: center;
+  z-index: 1;
+  color:White;
+}
+.user-login-box > *{
+  display: inline-block;
+  width: 200px;
+}
+.senha{
+  position: relative;
+  margin-top: 45px;
+  text-align: center;
+  z-index: 1;
+  color:White;
+  font-size:7px;
+}
+.user-icon{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 50%;
+  background-size: contain;
+  background-image: url(./css/vitorLindo.jpg);
+}
+.user-name{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: white;
+}
+input.user-password{
+  width: 120px;
+  height: 18px;
+  opacity: 0.4;
+  border-radius: 2px;
+  padding: 5px 15px;
+  border:black solid 1px;
+}
+.button {
+    padding-top: 40px;
+  
+    border-radius:10px;
+
+}
+
+#botao{
+  border:black solid 1px;
+  border-radius:2px;
+  background:rgba(255,255,255,0.05);
+  color:white;
+  text-decoration:none;
+  width:70px;
+  padding:5px;
+  z-index: -1;
+  display:flex;
+  position:relative;
+  margin-top: -25px;
+  margin-left: 32%;
+}
+#botao2{
+    text-decoration:nome;
+    Color:white;
+}
+
+    </style>
+</head>
+<body>
+  <div class="blurred-box">
+  <div class="user-login-box">
+    <span class="user-icon"></span>
+    <div class="user-name" style="font-size:20px;font-weight: bold;">vitor3D</div>
+    <div class"senha" >Senha:</div>
+    <input class="user-password" type="password" /> 
+    <div class="button">
+      <a href="pgprincipal.html"><b id="botao2">Login</b>
+        <input id="botao" type="button" value=""></a>
+
+  </div>
+  
+  </div>
+</div>
+</body>
+</html>
